@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bragança Piscinas e Acessórios | Materiais para Piscina e Assessoria para MEI</title>
+  <meta name="description" content="Comércio varejista de materiais para piscina desde 1999 em Bragança Paulista SP. Assessoria completa para MEI e PGMEI. Peças, acessórios e suporte técnico.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --azul-primario: #0a5b7a;
+      --azul-claro: #1b8db0;
+      --azul-escuro: #083c50;
+      --cinza-fundo: #f8f9fa;
+      --cinza-texto: #495057;
+      --dourado: #c49b3f;
+    }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #333; background: #fff; }
+    .bg-azul { background: linear-gradient(135deg, var(--azul-primario) 0%, var(--azul-escuro) 100%); }
+    .text-azul { color: var(--azul-primario); }
+    .btn-azul { background-color: var(--azul-primario); border: none; color: #fff; padding: 0.8rem 2rem; font-weight: 600; border-radius: 40px; transition: 0.3s; }
+    .btn-azul:hover { background-color: var(--azul-claro); color: #fff; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(10,91,122,0.3); }
+    .btn-outline-azul { border: 2px solid var(--azul-primario); color: var(--azul-primario); background: transparent; padding: 0.7rem 2rem; font-weight: 600; border-radius: 40px; transition: 0.3s; }
+    .btn-outline-azul:hover { background-color: var(--azul-primario); color: #fff; }
+    .hero-section { background: linear-gradient(rgba(8,60,80,0.85), rgba(10,91,122,0.7)), url('https://images.unsplash.com/photo-1572331165267-6daa0e3b2e0e?w=1200&q=80') center/cover no-repeat; padding: 6rem 0 5rem; color: #fff; }
+    .card-servico { border: none; border-radius: 16px; transition: 0.3s; box-shadow: 0 5px 20px rgba(0,0,0,0.05); height: 100%; }
+    .card-servico:hover { transform: translateY(-6px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+    .numero-destaque { font-size: 3rem; font-weight: 800; color: var(--azul-primario); line-height: 1; }
+    .icone-azul { color: var(--azul-claro); font-size: 2rem; margin-bottom: 0.5rem; }
+    .navbar-custom { background: rgba(255,255,255,0.97); backdrop-filter: blur(10px); box-shadow: 0 2px 15px rgba(0,0,0,0.07); }
+    .navbar-custom .nav-link { color: var(--azul-escuro); font-weight: 500; margin: 0 0.3rem; }
+    .navbar-custom .nav-link:hover { color: var(--azul-claro); }
+    .footer-custom { background: var(--azul-escuro); color: #ccc; padding: 3rem 0 1.5rem; }
+    .footer-custom a { color: #8ecae6; text-decoration: none; }
+    .footer-custom a:hover { color: #fff; }
+    .badge-azul { background: var(--azul-claro); color: #fff; font-weight: 500; padding: 0.4em 1em; border-radius: 30px; }
+    .linha-azul { width: 60px; height: 3px; background: var(--dourado); margin: 0.8rem 0 1.5rem; border-radius: 2px; }
+    .depoimento-card { background: #fff; border-radius: 20px; padding: 2rem; box-shadow: 0 5px 25px rgba(0,0,0,0.06); }
+    .accordion-button:not(.collapsed) { background-color: #e8f4f8; color: var(--azul-escuro); }
+    .accordion-button:focus { box-shadow: none; border-color: var(--azul-claro); }
+    .img-servico { height: 200px; object-fit: cover; border-radius: 16px 16px 0 0; }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-azul" href="#">
+      <i class="fa-solid fa-water-ladder me-2"></i>Bragança Piscinas
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mei">MEI & PGMEI</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-3">Materiais e Acessórios para Piscina com Assessoria Completa para MEI</h1>
+    <p class="lead mb-4">Desde 1999 em Bragança Paulista, oferecendo produtos de qualidade e suporte especializado para o seu negócio ou residência.</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a href="#contato" class="btn btn-light btn-lg px-4 py-2 fw-semibold rounded-pill shadow-sm"><i class="fa-solid fa-phone me-2"></i>Fale Conosco</a>
+      <a href="#mei" class="btn btn-outline-light btn-lg px-4 py-2 fw-semibold rounded-pill"><i class="fa-solid fa-user-tie me-2"></i>Sou MEI</a>
+    </div>
+    <div class="row mt-5 g-4 justify-content-center">
+      <div class="col-md-3 col-6"><div class="numero-destaque text-white">26+</div><small class="text-white-50">Anos de atuação</small></div>
+      <div class="col-md-3 col-6"><div class="numero-destaque text-white">3.000+</div><small class="text-white-50">Produtos em estoque</small></div>
+      <div class="col-md-3 col-6"><div class="numero-destaque text-white">500+</div><small class="text-white-50">Clientes atendidos</small></div>
+      <div class="col-md-3 col-6"><div class="numero-destaque text-white">CNPJ Ativo</div><small class="text-white-50">03.430.365/0001-44</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- Sobre -->
+<section id="sobre" class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="badge-azul mb-2">Desde 29/09/1999</span>
+        <h2 class="fw-bold mb-3">Bragança Piscinas e Acessórios LTDA</h2>
+        <div class="linha-azul"></div>
+        <p class="text-secondary">Fundada em 1999, a <strong>Braganca Piscinas</strong> atua no comércio varejista de materiais de construção para piscinas, oferecendo uma linha completa de acessórios, equipamentos e produtos de tratamento de água. Nossa missão é fornecer soluções de qualidade com atendimento próximo e transparente, seja para o consumidor final ou para o microempreendedor do ramo.</p>
+        <ul class="list-unstyled">
+          <li><i class="fa-solid fa-check-circle text-azul me-2"></i><strong>Razão Social:</strong> Braganca Piscinas e Acessorios LTDA</li>
+          <li><i class="fa-solid fa-check-circle text-azul me-2"></i><strong>CNPJ:</strong> 03.430.365/0001-44</li>
+          <li><i class="fa-solid fa-check-circle text-azul me-2"></i><strong>IE SP:</strong> 225.196.461.114</li>
+          <li><i class="fa-solid fa-check-circle text-azul me-2"></i><strong>Endereço:</strong> Av. dos Imigrantes, 1728 - A, Jd. América, Bragança Paulista/SP, 12902-000</li>
+          <li><i class="fa-solid fa-check-circle text-azul me-2"></i><strong>Atividade principal:</strong> CNAE 47.44-0-05 - Comércio varejista de materiais de construção</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1575424909138-46b6e1b1e3b6?w=600&q=80" alt="Acessórios para piscina" class="img-fluid rounded-4 shadow-lg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Serviços principais -->
+<section id="servicos" class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="badge-azul">O que fazemos</span>
+      <h2 class="fw-bold mt-2">Nossos Produtos e Serviços</h2>
+      <div class="linha-azul mx-auto"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-servico">
+          <img src="https://images.unsplash.com/photo-1582719471384-9a1eef7d3e0d?w=500&q=80" class="img-servico" alt="Produtos de limpeza para piscina">
+          <div class="card-body">
+            <h5 class="fw-bold"><i class="fa-solid fa-pump-soap me-2 text-azul"></i>Tratamento e Limpeza</h5>
+            <p class="text-secondary small">Cloro, algicidas, clarificantes, kits de teste e todos os produtos químicos para manter sua piscina cristalina.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-servico">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&q=80" class="img-servico" alt="Equipamentos para piscina">
+          <div class="card-body">
+            <h5 class="fw-bold"><i class="fa-solid fa-gear me-2 text-azul"></i>Bombas e Filtros</h5>
+            <p class="text-secondary small">Bombas d'água, filtros, motobombas, aquecedores e peças de reposição das melhores marcas do mercado.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-servico">
+          <img src="https://images.unsplash.com/photo-1598300042247-d087f8a3e91a?w=500&q=80" class="img-servico" alt="Acessórios para piscina">
+          <div class="card-body">
+            <h5 class="fw-bold"><i class="fa-solid fa-swatchbook me-2 text-azul"></i>Acessórios e Peças</h5>
+            <p class="text-secondary small">Escadas, capas, mangueiras, ralos, bocais, iluminação subaquática e tudo o que sua piscina precisa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEI & PGMEI -->
+<section id="mei" class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" alt="Assessoria para MEI" class="img-fluid rounded-4 shadow-lg">
+      </div>
+      <div class="col-lg-6">
+        <span class="badge-azul">Exclusivo</span>
+        <h2 class="fw-bold mt-2 mb-3">Assessoria para MEI e PGMEI no Ramo de Piscinas</h2>
+        <div class="linha-azul"></div>
+        <p class="text-secondary">Se você é microempreendedor individual e trabalha com instalação, manutenção ou limpeza de piscinas, nós entendemos seus desafios. Oferecemos orientação completa para regularizar, manter e expandir seu negócio com segurança.</p>
+        <div class="row g-3 mt-3">
+          <div class="col-sm-6"><i class="fa-solid fa-file-invoice text-azul me-2"></i>Regularização do MEI</div>
+          <div class="col-sm-6"><i class="fa-solid fa-barcode text-azul me-2"></i>DAS-MEI e parcelamento</div>
+          <div class="col-sm-6"><i class="fa-solid fa-hand-holding-heart text-azul me-2"></i>Benefícios do INSS</div>
+          <div class="col-sm-6"><i class="fa-solid fa-file-contract text-azul me-2"></i>Contratos de serviço</div>
+          <div class="col-sm-6"><i class="fa-solid fa-shield-haltered text-azul me-2"></i>Defesa do seu negócio</div>
+          <div class="col-sm-6"><i class="fa-solid fa-user-plus text-azul me-2"></i>Orientação para contratar</div>
+        </div>
+        <a href="#contato" class="btn btn-azul mt-4"><i class="fa-brands fa-whatsapp me-2"></i>Quero ajuda com meu MEI</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Por que escolher -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Por que escolher a Bragança Piscinas</h2>
+      <div class="linha-azul mx-auto"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="text-center p-4"><div class="icone-azul"><i class="fa-solid fa-clock"></i></div><h5>Mais de 26 anos de experiência</h5><p class="text-secondary small">Atuando desde 1999 com seriedade e conhecimento técnico no mercado de piscinas.</p></div></div>
+      <div class="col-md-4"><div class="text-center p-4"><div class="icone-azul"><i class="fa-solid fa-map-pin"></i></div><h5>Atendimento local e online</h5><p class="text-secondary small">Loja física em Bragança Paulista e suporte remoto para todo o Brasil via WhatsApp e e-mail.</p></div></div>
+      <div class="col-md-4"><div class="text-center p-4"><div class="icone-azul"><i class="fa-solid fa-hand-holding-dollar"></i></div><h5>Foco em pequenos negócios</h5><p class="text-secondary small">Condições especiais e assessoria dedicada para microempreendedores do ramo.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Depoimentos -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">A confiança de quem já comprou</h2>
+      <div class="linha-azul mx-auto"></div>
+      <p class="text-secondary">Depoimentos reais de clientes (identificação preservada conforme diretrizes de privacidade).</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="depoimento-card"><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><p class="small mt-2">"Equipe atenciosa, me ajudaram a regularizar meu MEI e ainda comprei todos os produtos de limpeza com preço justo."</p><small class="text-muted">— J. Silva, MEI instalador hidráulico</small></div></div>
+      <div class="col-md-4"><div class="depoimento-card"><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><p class="small mt-2">"Peças que eu não achava em lugar nenhum, eles tinham. Entrega rápida e suporte técnico nota 10."</p><small class="text-muted">— M. Oliveira, proprietária de residência</small></div></div>
+      <div class="col-md-4"><div class="depoimento-card"><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><i class="fa-solid fa-star text-warning mb-2"></i><p class="small mt-2">"Além dos materiais, a assessoria para abrir meu MEI foi fundamental. Recomendo demais."</p><small class="text-muted">— R. Santos, profissional autônomo</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Perguntas Frequentes</h2>
+      <div class="linha-azul mx-auto"></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item mb-2 border-0 shadow-sm rounded-3">
+            <h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Vocês vendem apenas em Bragança Paulista?</button></h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-secondary">Não. Atendemos presencialmente em nossa loja física e também enviamos produtos para todo o Brasil, além de oferecer consultoria online para MEIs.</div></div>
+          </div>
+          <div class="accordion-item mb-2 border-0 shadow-sm rounded-3">
+            <h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Como funciona a assessoria para MEI?</button></h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-secondary">Analisamos sua situação, orientamos sobre regularização, emissão de DAS, benefícios previdenciários e fornecemos modelos de contrato. Tudo com transparência e sem burocracia.</div></div>
+          </div>
+          <div class="accordion-item mb-2 border-0 shadow-sm rounded-3">
+            <h2 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Quais formas de pagamento são aceitas?</button></h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body text-secondary">Aceitamos dinheiro, cartões de débito/crédito, PIX e boleto bancário. Para MEIs, oferecemos condições especiais de parcelamento.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contato -->
+<section id="contato" class="py-5 bg-azul text-white">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-5">
+        <h2 class="fw-bold">Fale com a Bragança Piscinas</h2>
+        <p>Preencha o formulário ou utilize nossos canais de atendimento. Retornamos em até um dia útil.</p>
+        <p><i class="fa-solid fa-phone me-2"></i>(11) 4032-2634 | (11) 4032-1720</p>
+        <p><i class="fa-solid fa-envelope me-2"></i>gil@bragancapiscinas.com.br</p>
+        <p><i class="fa-solid fa-location-dot me-2"></i>Av. dos Imigrantes, 1728 - A, Jd. América, Bragança Paulista/SP</p>
+        <p class="small mt-4">Este formulário não cria vínculo contratual. O relacionamento comercial se estabelece mediante pedido ou contrato formal.</p>
+      </div>
+      <div class="col-lg-7">
+        <form class="bg-white text-dark p-4 rounded-4 shadow">
+          <div class="row g-3">
+            <div class="col-md-6"><input type="text" class="form-control" placeholder="Nome completo" required></div>
+            <div class="col-md-6"><input type="tel" class="form-control" placeholder="WhatsApp com DDD" required></div>
+            <div class="col-12"><input type="email" class="form-control" placeholder="E-mail"></div>
+            <div class="col-12"><textarea class="form-control" rows="3" placeholder="Como podemos ajudar?" required></textarea></div>
+            <div class="col-12"><button type="submit" class="btn btn-azul w-100"><i class="fa-brands fa-whatsapp me-2"></i>Enviar mensagem</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-custom">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h5 class="text-white fw-bold"><i class="fa-solid fa-water-ladder me-2"></i>Bragança Piscinas</h5>
+        <p class="small">Comércio varejista de materiais para piscina e assessoria para MEI. CNPJ 03.430.365/0001-44. IE SP 225.196.461.114. Ativa desde 1999.</p>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-white">Links úteis</h6>
+        <ul class="list-unstyled small">
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+          <li><a href="termos.html">Termos de Uso</a></li>
+          <li><a href="#sobre">Sobre a empresa</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="text-white">Atendimento</h6>
+        <p class="small mb-1">Seg. a Sex.: 08h às 18h | Sáb.: 08h às 13h</p>
+        <p class="small mb-0">Bragança Paulista - SP</p>
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <p class="text-center small mb-0">© 2025 Braganca Piscinas e Acessorios LTDA. Todos os direitos reservados. | Desenvolvido com foco em transparência e resultados.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
